@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval in JavaScript</title>
+</head>
+<style>
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-top: 200px;
+    background-color: aqua;
+    padding-bottom: 10px;
+}
+
+#date{
+    font-weight: bold;
+}
+</style>
+
+<body>
+    <div class="cont">
+        <h1 class="pheading">Time Now Is</h1>
+        <div id="date"></div>
+    </div>
+    <script>
+        // console.log("This is tutorial 58");
+
+
+
+        // function greet(a, b) {
+        //     console.log(`Hello ${a} Good Morning, ${b}`);
+        // }
+
+        // let myTimeout = setTimeout(greet, 3000, "Bhanu", "bye");
+        // console.log(myTimeout);
+
+        // clearTimeout(myTimeout);
+
+
+
+
+        //    function greet1() {
+        //         console.log("Hi, i am Bhanu");
+        //    }
+
+        //    function tof() {
+        //        setTimeout(greet1, 1000);
+        //    }
+        //    tof();
+
+        //    let intervaId = setInterval(greet1, 1000);
+
+        //    function clin() {
+        //     clearInterval(intervaId);
+        //    }
+        //    setTimeout(clin, 5000);
+
+
+        
+        function dateTime() {
+            let myDate = new Date();
+            document.getElementById("date").innerHTML = myDate;
+            // document.getElementById("date").innerHTML = new Date();
+        }
+
+        setInterval(dateTime, 1000);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

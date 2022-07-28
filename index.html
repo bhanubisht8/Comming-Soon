@@ -4,50 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>setTimeout and setInterval in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Comming Soon</title>
 </head>
-<style>
-.cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 2px solid black;
-    margin-top: 200px;
-    background-color: aqua;
-    padding-bottom: 10px;
-}
-
-#date{
-    font-weight: bold;
-}
-</style>
 
 <body>
+
     <div class="cont">
-        <h1 class="pheading">Comming Soon</h1>
-        <div id="date"></div>
+        <div class="text">
+            <h1 class="pheading">Comming Soon....</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsa debitis voluptatum illo deserunt
+                unde explicabo ducimus dolorum fugit, doloribus id beatae, ut quia eaque vitae dignissimos. Minus
+                aspernatur ipsam, aliquam molestias exercitationem nesciunt sequi ratione eius ex veniam suscipit quae
+                debitis magnam possimus modi eos error consectetur cumque perspiciatis quaerat in sunt? Et vel sequi
+                quibusdam recusandae totam sint architecto. </p>
+        </div>
+        <div class="timer">
+            <span id="day" class="watch"></span>
+            <span id="hr" class="watch"></span>
+            <span id="min" class="watch"></span>
+            <span id="sec" class="watch"></span>
+        </div>
     </div>
-    <script>
-       
-        
-        function dateTime() {
-            let myDate = new Date();
-            document.getElementById("date").innerHTML = myDate;
-            // document.getElementById("date").innerHTML = new Date();
-        }
-
-        setInterval(dateTime, 1000);
-
-
-
-
-
-
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
